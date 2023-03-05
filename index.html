@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online tests</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script src="onlinetests.js" defer></script>
+    <link rel="stylesheet" href="onlinetests.css" />
+  </head>
+  <body>
+    <label class="label__for__totalquestions" for="total_questions"
+      >How many tests ?</label
+    >
+    <input
+      class="main__inputs"
+      type="text"
+      name="total_questions"
+      id="total_questions"
+    />
+    <br />
+    <label class="label__for__totalans" for="total_answers"
+      >with how many answers ?</label
+    >
+    <input
+      class="main__inputs answerssss"
+      type="text"
+      name="total_answers"
+      id="total_answers"
+    />
+    <br />
+    <label class="label__for__points" for="points"
+      >points per correct aswer</label
+    >
+    <input class="main__inputs points" type="text" name="points" id="points" />
+
+    <br />
+
+    <button class="create__tests">Click to create</button>
+
+    <!-- -------------------------------------->
+
+    <!-- --------===============USER DEFINED TEST==-------------========== -->
+
+    <div class="test">
+      <div class="grid__wrapper"></div>
+    </div>
+    <button class="submit__questions">Create Test</button>
+    <!-- --------===============CEATED TEST==-------------========== -->
+    <ol class="tests__list2"></ol>
+    <button class="submit__test">Submit Test</button>
+
+    <p class="result"></p>
+  </body>
+</html>
